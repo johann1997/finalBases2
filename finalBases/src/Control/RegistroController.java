@@ -7,6 +7,7 @@ package Control;
 
 import Modelo.Ciudad;
 import Modelo.Departamento;
+import Modelo.Usuario;
 import java.net.URL;
 import java.sql.Date;
 import java.sql.ResultSet;
@@ -62,7 +63,23 @@ public class RegistroController implements Initializable {
         System.out.println("entraaa");
 //        cargarDepartamentos();
  //       addListenerChoice();
-    }    
+    } 
+    
+     String permanencia;
+    
+    public void importarVariables( Usuario ObjU, String  password ) {
+        
+      
+          
+          
+          permanencia=ObjU.toString();
+        System.out.println(ObjU.toString());
+
+        
+        
+
+    }
+    
 
     @FXML
     private void IrRegistro(ActionEvent event) {

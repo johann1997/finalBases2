@@ -5,6 +5,7 @@
  */
 package Control;
 
+import Modelo.Usuario;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -33,7 +34,11 @@ public class InicioController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         System.out.println("entra");
-    }    
+        
+    }
+
+
+    String permanencia;
 
     @FXML
     private void InsertProyecto(ActionEvent event) {
@@ -68,6 +73,22 @@ public class InicioController implements Initializable {
     private void insertUserEmpresa(ActionEvent event){
         cambiarPestana(event, "usEmpresa");
     }
+    
+    
+      public void importarVariables( Usuario ObjU, String  password ) {
+        
+      
+          
+          
+          permanencia=ObjU.toString();
+        System.out.println(ObjU.toString());
+
+        
+        
+
+    }
+    
+    
     
     void cambiarPestana(ActionEvent event,String url){
         System.out.println("entraaaaaa");

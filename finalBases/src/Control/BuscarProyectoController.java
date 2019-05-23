@@ -67,6 +67,20 @@ public class BuscarProyectoController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
     }
+     String permanencia;
+    
+    public void importarVariables( Usuario ObjU, String  password ) {
+        
+      
+          
+          
+          permanencia=ObjU.toString();
+        System.out.println(ObjU.toString());
+
+        
+        
+
+    }
 
     @FXML
     private void back(ActionEvent event) throws IOException {

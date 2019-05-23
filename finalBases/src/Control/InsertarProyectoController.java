@@ -100,7 +100,22 @@ public class InsertarProyectoController implements Initializable {
         anadir();
         cargarDepartamentos();
         addListenerChoice();
-    }    
+    } 
+    
+     String permanencia;
+    public void importarVariables( Usuario ObjU, String  password ) {
+        
+      
+          
+          
+          permanencia=ObjU.toString();
+        System.out.println(ObjU.toString());
+
+        
+        
+
+    }
+    
     
     @FXML
     private void cargarDepartamentos(){

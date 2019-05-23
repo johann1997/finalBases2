@@ -54,7 +54,24 @@ public class AddCertificadoController implements Initializable {
         // TODO
         loadCerti();
         anadir();
-    }    
+    } 
+     String permanencia;
+    
+    public void importarVariables( Usuario ObjU, String  password ) {
+        
+      
+          
+          
+          permanencia=ObjU.toString();
+        System.out.println(ObjU.toString());
+
+        
+        
+
+    }
+    
+    
+    
     private void loadCerti() {
         List<String> certifiA = new ArrayList<>();
         certifiA.add("Seleccione...");

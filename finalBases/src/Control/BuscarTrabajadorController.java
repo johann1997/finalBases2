@@ -68,7 +68,23 @@ public class BuscarTrabajadorController implements Initializable {
         loadUsers("Select * from usuario");
         cargarDepartamentos();
         addListenerChoice();
-    }    
+    } 
+     String permanencia;
+    
+    
+    public void importarVariables( Usuario ObjU, String  password ) {
+        
+      
+          
+          
+          permanencia=ObjU.toString();
+        System.out.println(ObjU.toString());
+
+        
+        
+
+    }
+    
     
     void loadUsers(String sql){
         Conectar cd = new Conectar();

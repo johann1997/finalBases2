@@ -6,6 +6,7 @@ package Control;
  * and open the template in the editor.
  */
 
+import Modelo.Usuario;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.PreparedStatement;
@@ -45,7 +46,23 @@ public class EmpresasController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         System.out.println("enn");
-    }    
+    }
+    
+     String permanencia;
+    
+    
+    public void importarVariables( Usuario ObjU, String  password ) {
+        
+      
+          
+          
+          permanencia=ObjU.toString();
+        System.out.println(ObjU.toString());
+
+        
+        
+
+    }
     
    @FXML
    public void insertarEmpresa(ActionEvent event){
